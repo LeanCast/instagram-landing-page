@@ -1,0 +1,178 @@
+@font-face {
+  font-family: blueVinyl;
+  src: url(font/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf)
+}
+
+@font-face {
+  font-family: segoe ui semibold;
+  src: url(font/segoe-ui-semibold-2.ttf)
+}
+
+@font-face {
+  font-family: segoe ui;
+  src: url(font/segoe-ui.otf)
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: segoe ui;
+  //font-size: 14px;
+  color: #8e8e8e;
+}
+
+button{
+  cursor: pointer;
+  background-color: #ffffff;
+  font-family: segoe ui semibold;
+  font-size: 14px;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  //display: flex;
+  //justify-content: center;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 100vh;
+  margin: auto;
+
+}
+
+.left_side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 48px;
+  margin-right: 15px;
+}
+
+.left_side img{
+  height: 38rem;
+}
+
+.right_side{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 44%;
+  min-height: 37rem;
+  margin-top: 70px;
+}
+
+.gray_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1.3rem 0;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  font-size: 14px;
+}
+
+.gray_box:nth-child(1){
+  min-height: 21rem;
+}
+
+.insta_logo{
+  font-family: blueVinyl;
+  font-size: 40px;
+  color: #000000;
+}
+
+.gray_box img{
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.continue_as{
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.blue_button{
+  color: #0095f6;
+}
+
+.get_app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+  font-size: 14px;
+}
+
+.download_buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.get_app span{
+  color: #000000;
+}
+
+.get_app img{
+  height: 40px;
+}
+
+.links{
+  //list-style-type: none;
+  text-align: center;
+  font-size: 12px;
+  margin: 20px;
+}
+
+li{
+  display: inline;
+  padding: 8px;
+}
+
+@media (max-width: 875px) {
+   .wrapper{
+     width: 90%;
+   }
+ }
+
+@media (max-width: 650px) {
+
+  body{
+    background-color: #ffffff;
+  }
+  .gray_box{
+    border: 1px solid transparent;
+  }
+   .wrapper{
+     width: 90%;
+   }
+
+   .left_side{
+     display: none;
+   }
+
+   .right_side{
+     width: 100%;
+   }
+
+ }
